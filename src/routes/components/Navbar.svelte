@@ -6,12 +6,8 @@
 <div class="nav">
     <div class="center">
         <div class="navbar justify-between bg-base-100">
-            <div class="flex-1">
-                <Brand />
-            </div>
-            <div class="flex-none">
-                <Menu />
-            </div>
+            <Brand />
+            <Menu />
         </div>
     </div>
 </div>
