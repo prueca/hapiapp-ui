@@ -4,7 +4,7 @@
 </script>
 
 <div class="nav">
-    <div class="center">
+    <div class="content-wrapper">
         <div class="navbar justify-between bg-base-100">
             <Brand />
             <Menu />
@@ -14,7 +14,7 @@
 
 <style lang="postcss">
     @reference 'tailwindcss';
-    .center {
-        @apply mx-auto max-w-300;
+    .content-wrapper {
+        @apply p-0;
     }
 </style>

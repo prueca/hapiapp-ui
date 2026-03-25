@@ -30,3 +30,7 @@ input {
 .btn {
     @apply text-base font-normal text-(--font-color) ring-0 outline-none;
 }
+
+.content-wrapper {
+    @apply mx-auto max-w-300 p-4;
+}

@@ -3,7 +3,7 @@
 </script>
 
 <div class="cabcon">
-    <div class="center">
+    <div class="content-wrapper">
         <div class="card bg-base-100">
             <div class="card-body">
                 <h2 class="card-title">Lorem Store</h2>
@@ -24,8 +24,8 @@
         @apply w-full bg-slate-100;
     }
 
-    .center {
-        @apply mx-auto max-w-300 p-4;
+    .content-wrapper {
+        @apply mx-auto max-w-300;
     }
 
     .card {

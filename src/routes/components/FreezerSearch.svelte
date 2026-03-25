@@ -3,7 +3,7 @@
 </script>
 
 <div class="search-bar">
-    <div class="flex gap-2">
+    <div class="flex gap-4">
         <!-- search input -->
         <label class="input input-lg">
             <Icon icon="lets-icons:search-light" width="24" class="opacity-50" />
