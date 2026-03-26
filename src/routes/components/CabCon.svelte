@@ -9,8 +9,14 @@
                 <h2 class="card-title">Lorem Store</h2>
                 <p class="code">CABCONJAN2020</p>
                 <div class="card-actions">
-                    <button class="btn btn-lg">Capture</button>
-                    <button class="btn btn-lg">Scan</button>
+                    <button class="btn btn-lg">
+                        <Icon icon="ic:twotone-camera" width="20" />
+                        <span>Capture</span>
+                    </button>
+                    <button class="btn flex btn-lg">
+                        <Icon icon="ph:scan-duotone" width="20" />
+                        <span>Scan</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -21,15 +27,11 @@
     @reference 'tailwindcss';
 
     .cabcon {
-        @apply w-full bg-slate-100;
-    }
-
-    .content-wrapper {
-        @apply mx-auto max-w-300;
+        @apply w-full;
     }
 
     .card {
-        @apply w-full max-w-96 shadow-sm;
+        @apply w-full rounded-xl bg-(--primary) text-white shadow-(--shadow-primary);
     }
 
     .code {
@@ -40,7 +42,7 @@
         @apply mt-4 gap-4;
 
         .btn {
-            @apply w-24;
+            @apply w-30 rounded-lg border-none bg-white/25 text-white;
         }
     }
 </style>

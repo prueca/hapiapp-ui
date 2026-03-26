@@ -16,7 +16,7 @@
     @reference 'tailwindcss';
 
     .brand-container {
-        @apply ml-4 flex items-center gap-4;
+        @apply ml-2 flex items-center gap-4;
 
         .app-name {
             @apply text-2xl;

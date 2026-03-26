@@ -22,10 +22,10 @@
     }
 
     .input {
-        @apply text-base;
+        @apply rounded-lg text-base;
     }
 
     .search-btn {
-        @apply text-base;
+        @apply rounded-lg text-base;
     }
 </style>
