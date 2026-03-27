@@ -7,7 +7,12 @@
         <div class="card bg-base-100">
             <div class="card-body">
                 <h2 class="card-title">Lorem Store</h2>
-                <p class="code">CABCONJAN2020</p>
+                <div class="code-container">
+                    <div class="code">CABCONJAN2020</div>
+                    <button class="copy-btn btn btn-circle btn-ghost btn-sm">
+                        <Icon icon="si:copy-duotone" width="24" />
+                    </button>
+                </div>
                 <div class="card-actions">
                     <button class="btn btn-lg">
                         <Icon icon="ic:twotone-camera" width="20" />
@@ -34,15 +39,25 @@
         @apply w-full rounded-xl bg-(--primary) text-white shadow-(--shadow-primary);
     }
 
-    .code {
-        @apply text-2xl font-bold;
+    .code-container {
+        @apply flex items-center gap-2;
+        .code {
+            @apply text-2xl font-bold;
+        }
+        .copy-btn {
+            @apply text-white;
+
+            &:hover {
+                @apply bg-white/25;
+            }
+        }
     }
 
     .card-actions {
-        @apply mt-4 gap-4;
+        @apply mt-4;
 
         .btn {
-            @apply w-30 rounded-lg border-none bg-white/25 text-white;
+            @apply w-34 rounded-lg border-none bg-white/25 text-xl text-white;
         }
     }
 </style>
