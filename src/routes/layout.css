@@ -7,28 +7,12 @@
 
 /* variables */
 :root {
-    --gray: #f1f3f4;
-    --purple: #9887ad;
-    --pink: #fbb7c0;
-    --orange: #d36135ff;
-    --red: #f37575;
-    --green: #bbd686;
-    --blue: #7eb2dd;
-    --brown: #bfada3;
-    --grey: #4a4a4a;
-    --yellow: #e1ca96;
-    --deep-purple: #605678;
-    --teal: #218380;
-
     --font-size: 16px;
     --font-color: #616161;
 
-    --primary: #a98b96;
-    --secondary: #ffe1af;
-    --tertiary: #e2b59a;
-
-    --shadow-primary:
-        rgba(169, 139, 150, 0.5) 0px 20px 25px -5px, rgba(169, 139, 150, 0.5) 0px 10px 10px -5px;
+    --primary: #a7727d;
+    --secondary: #f8ede3;
+    --supporting: #f9f5e7;
 }
 
 /* defaults */

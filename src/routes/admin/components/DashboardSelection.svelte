@@ -12,28 +12,24 @@
         <div class="dashboard-grid">
             <DashboardOption
                 href="/admin/freezers"
-                color="green"
                 icon="solar:fridge-bold-duotone"
                 label="Freezers"
                 tooltip="Tooltip"
             />
             <DashboardOption
                 href="/admin/accounts"
-                color="blue"
                 icon="stash:shop-duotone"
                 label="Accounts"
                 tooltip="Tooltip"
             />
             <DashboardOption
                 href="/admin/users"
-                color="purple"
                 icon="solar:user-circle-bold-duotone"
                 label="Users"
                 tooltip="Tooltip"
             />
             <DashboardOption
                 href="/admin/cabcons"
-                color="red"
                 icon="solar:notes-bold-duotone"
                 label="CabCons"
                 tooltip="Tooltip"

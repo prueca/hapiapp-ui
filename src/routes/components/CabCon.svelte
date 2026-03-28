@@ -36,7 +36,7 @@
     }
 
     .card {
-        @apply w-full rounded-xl bg-(--primary) text-white shadow-(--shadow-primary);
+        @apply w-full rounded-xl bg-(--primary) text-(--secondary);
     }
 
     .code-container {
@@ -57,7 +57,7 @@
         @apply mt-4;
 
         .btn {
-            @apply w-34 rounded-lg border-none bg-white/25 text-xl text-white;
+            @apply w-34 rounded-lg border-none bg-(--secondary) text-xl text-(--primary);
         }
     }
 </style>

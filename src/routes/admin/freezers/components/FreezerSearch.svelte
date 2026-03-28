@@ -1,6 +1,6 @@
 <script lang="ts">
     import Icon from '@iconify/svelte'
-    import Filters from '../../../components/Filters.svelte'
+    import Filters from './Filters.svelte'
 </script>
 
 <div class="search-bar">
