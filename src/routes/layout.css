@@ -10,9 +10,9 @@
     --font-size: 16px;
     --font-color: #616161;
 
-    --primary: #a7727d;
-    --secondary: #f8ede3;
-    --supporting: #f9f5e7;
+    --primary: #f1e5d1;
+    --secondary: #c39898;
+    --accent: #987070;
 }
 
 /* defaults */
@@ -39,4 +39,7 @@ input {
 
 .content-wrapper {
     @apply mx-auto max-w-[430px] p-4;
+}
+.themed-btn {
+    @apply rounded-lg border-none bg-(--primary) text-(--accent);
 }

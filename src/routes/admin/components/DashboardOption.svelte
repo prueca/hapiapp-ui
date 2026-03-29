@@ -11,9 +11,9 @@
 <a href={props.href}>
     <div class="dashboard-option">
         <button class="tooltip" data-tip={props.tooltip} onclick={tooltipOnClick}>
-            <Icon icon="ic:twotone-info" width="24" class="text-(--primary)" />
+            <Icon icon="ic:twotone-info" width="24" class="text-(--secondary)" />
         </button>
-        <Icon icon={props.icon} width="58" class="text-(--primary)" />
+        <Icon icon={props.icon} width="54" class="text-(--secondary)" />
         <div class="label">{props.label}</div>
     </div>
 </a>
@@ -28,20 +28,17 @@
         @apply bg-(--secondary);
     }
     .supporting {
-        @apply bg-(--supporting);
-    }
-    .supporting-2 {
-        @apply bg-(--supporting-2);
+        @apply bg-(--accent);
     }
 
     .dashboard-option {
-        @apply relative h-28 rounded-xl bg-(--secondary) p-4;
+        @apply relative h-28 rounded-xl bg-(--primary) p-4;
 
         .tooltip {
             @apply absolute top-4 right-4;
         }
         .label {
-            @apply absolute bottom-2 left-4 text-lg font-bold text-(--primary);
+            @apply absolute bottom-2 left-4 text-lg text-(--accent);
         }
     }
 </style>

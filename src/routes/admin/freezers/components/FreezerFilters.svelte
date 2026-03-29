@@ -8,13 +8,13 @@
     @reference 'tailwindcss';
 
     .filters {
-        @apply grid grid-cols-3 gap-2 rounded-xl bg-(--secondary) p-3;
+        @apply grid grid-cols-3 gap-2 rounded-xl bg-(--secondary) p-2;
     }
     .btn {
         @apply grow rounded-lg border-none bg-transparent text-(--primary);
 
         &.active {
-            @apply bg-(--primary) text-white;
+            @apply bg-(--primary) text-(--accent);
         }
     }
 </style>

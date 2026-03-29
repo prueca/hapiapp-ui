@@ -18,7 +18,7 @@
                         <Icon icon="ph:camera-duotone" width="20" />
                         <span>Capture</span>
                     </button>
-                    <button class="btn flex btn-lg">
+                    <button class="btn btn-lg">
                         <Icon icon="ph:scan-duotone" width="20" />
                         <span>Scan</span>
                     </button>
@@ -36,7 +36,7 @@
     }
 
     .card {
-        @apply w-full rounded-xl bg-(--primary) text-(--secondary);
+        @apply w-full rounded-xl bg-(--primary) text-(--accent);
     }
 
     .code-container {
@@ -45,7 +45,7 @@
             @apply text-2xl font-bold;
         }
         .copy-btn {
-            @apply text-white;
+            @apply text-(--accent);
 
             &:hover {
                 @apply bg-white/25;

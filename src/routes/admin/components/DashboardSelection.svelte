@@ -5,10 +5,7 @@
 
 <div class="dashboard-selection">
     <div class="content-wrapper">
-        <div class="section-title">
-            <Icon icon="duo-icons:dashboard" width="20" />
-            <span>Browse Dashboard</span>
-        </div>
+        <div class="section-title">Browse Dashboard</div>
         <div class="dashboard-grid">
             <DashboardOption
                 href="/admin/freezers"
