@@ -20,7 +20,7 @@
     @reference 'tailwindcss';
 
     .freezer {
-        @apply mb-4 rounded-xl bg-(--primary)/35 p-4 text-(--accent);
+        @apply mb-4 rounded-xl bg-(--primary-faded) p-4 text-(--accent);
     }
     .freezer-id {
         @apply text-base;

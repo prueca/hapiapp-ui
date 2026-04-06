@@ -13,6 +13,7 @@
     --primary: #f1e5d1;
     --secondary: #c39898;
     --accent: #987070;
+    --primary-faded: rgba(241, 229, 209, 0.35);
 }
 
 /* defaults */

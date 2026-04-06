@@ -1,18 +1,75 @@
+<script lang="ts">
+    import StatusFilter from './StatusFilter.svelte'
+
+    let status = $state([
+        {
+            text: 'All',
+            selected: true
+        },
+        {
+            text: 'Assigned',
+            selected: false
+        },
+        {
+            text: 'Deployed',
+            selected: false
+        },
+        {
+            text: 'For Deployment',
+            selected: false
+        },
+        {
+            text: 'Pull',
+            selected: false
+        },
+        {
+            text: 'For Pullout',
+            selected: false
+        },
+        {
+            text: 'For Replacement (Breakdown)',
+            selected: false
+        },
+        {
+            text: 'For Replacement (Upgrade)',
+            selected: false
+        },
+        {
+            text: 'For Replacement (Downgrade)',
+            selected: false
+        }
+    ])
+</script>
+
 <div class="filters">
-    <button class="active btn">All</button>
-    <button class="btn">Status</button>
-    <button class="btn">Status</button>
+    <div class="wrapper">
+        {#each status as item, index}
+            <StatusFilter text={item.text} {index} bind:status />
+        {/each}
+    </div>
 </div>
 
 <style lang="postcss">
     @reference 'tailwindcss';
 
     .filters {
-        @apply grid grid-cols-3 gap-2 rounded-xl bg-(--secondary) p-2;
+        @apply rounded-xl bg-(--secondary) p-2;
+    }
+    .wrapper {
+        @apply flex gap-2 overflow-x-auto overflow-y-hidden;
+
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
     .btn {
-        @apply grow rounded-lg border-none bg-transparent text-(--primary);
+        @apply shrink-0 grow rounded-lg border-none bg-transparent text-(--primary);
 
+        &:hover {
+            @apply bg-(--primary-faded);
+        }
         &.active {
             @apply bg-(--primary) text-(--accent);
         }
