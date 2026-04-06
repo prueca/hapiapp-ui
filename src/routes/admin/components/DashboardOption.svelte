@@ -32,7 +32,7 @@
     }
 
     .dashboard-option {
-        @apply relative h-28 rounded-xl bg-(--primary) p-4;
+        @apply relative h-28 rounded-xl bg-(--primary)/35 p-4;
 
         .tooltip {
             @apply absolute top-4 right-4;

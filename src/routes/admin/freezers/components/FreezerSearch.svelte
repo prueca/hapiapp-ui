@@ -4,13 +4,13 @@
 </script>
 
 <div class="search-bar">
-    <div class="flex gap-4">
-        <!-- search input -->
-        <label class="input input-lg">
-            <Icon icon="lets-icons:search-light" width="24" class="opacity-50" />
-            <input type="search in" required placeholder="Search freezer..." />
-        </label>
-        <!-- search button -->
+    <div class="join flex">
+        <div class="flex-1">
+            <label class=" input input-lg join-item">
+                <Icon icon="lets-icons:search-light" width="24" class="opacity-50" />
+                <input type="text" placeholder="Search freezer..." required />
+            </label>
+        </div>
         <button class="search-btn themed-btn btn btn-lg">Search</button>
     </div>
     <FreezerFilters />
@@ -24,10 +24,10 @@
     }
 
     .input {
-        @apply rounded-lg text-base;
+        @apply rounded-l-lg border border-r-0 border-(--primary) text-base;
     }
 
     .search-btn {
-        @apply rounded-lg text-base;
+        @apply rounded-none rounded-r-lg border border-(--primary) text-base;
     }
 </style>
