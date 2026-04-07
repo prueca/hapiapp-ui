@@ -1,48 +1,42 @@
 <script lang="ts">
-    import _ from 'lodash'
+    import { getStatusOpts } from '../store.svelte'
 
-    type TProps = {
-        text: string
-        index: number
-        status: {
-            text: string
-            selected: boolean
-        }[]
-    }
+    const options = getStatusOpts()
 
-    const { index, text, status = $bindable() }: TProps = $props()
-    let active = $derived(status[index]?.selected ?? false)
+    let selected: string[] = $derived(options.map((item) => item.value))
 
-    const handleClick = () => {
-        status[index].selected = !active
-        const all = index === 0 && active
-
-        if (all) {
-            status.map((item) => (item.selected = false))
-        }
-
-        status[0].selected = all
-        const isNoneSelected = _.every(status, (item) => !item.selected)
-
-        if (isNoneSelected) {
-            status[0].selected = true
-        }
+    const selectAll = () => {
+        selected = options.map((item) => item.value)
     }
 </script>
 
-<button class="btn" class:active onclick={handleClick}>{text}</button>
+<div class="status-filter">
+    <div class="label">
+        <div>Filter by Status</div>
+        <button class="select-all-btn btn btn-ghost" onclick={selectAll}> Select All </button>
+    </div>
+    <select class="select" multiple bind:value={selected}>
+        {#each options as item}
+            <option value={item.value}>{item.label}</option>
+        {/each}
+    </select>
+</div>
 
 <style lang="postcss">
     @reference 'tailwindcss';
 
-    .btn {
-        @apply rounded-lg border-none bg-transparent text-(--primary);
+    .label {
+        @apply mb-2 flex items-center justify-between;
+    }
+    .select-all-btn {
+        @apply rounded-lg bg-white;
+    }
+    .select {
+        @apply w-full rounded-lg border bg-white text-base ring-0 outline-none;
 
-        &:hover {
-            @apply bg-(--primary-faded);
-        }
-        &.active {
-            @apply bg-(--primary) text-(--accent);
+        option:active,
+        option:hover {
+            @apply bg-(--primary-faded) text-(--accent) shadow-none;
         }
     }
 </style>

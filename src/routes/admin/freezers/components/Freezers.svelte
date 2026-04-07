@@ -1,13 +1,13 @@
 <script lang="ts">
-    import FreezerSearch from './FreezerSearch.svelte'
-    import FreezerList from './FreezerList.svelte'
+    import Search from './Search.svelte'
+    import List from './List.svelte'
 </script>
 
-<div class="freezer-list">
+<div>
     <div class="content-wrapper">
         <div class="section-title">Freezers</div>
-        <FreezerSearch />
-        <FreezerList />
+        <Search />
+        <List />
     </div>
 </div>
 

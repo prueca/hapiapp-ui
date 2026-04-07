@@ -1,7 +1,7 @@
 <script lang="ts">
-    import StatusFilter from './StatusFilter.svelte'
+    import StatusFilter from './StatusFilter.bk.svelte'
 
-    let status = $state([
+    let statusList = $state([
         {
             text: 'All',
             selected: true
@@ -43,8 +43,8 @@
 
 <div class="filters">
     <div class="wrapper">
-        {#each status as item, index}
-            <StatusFilter text={item.text} {index} bind:status />
+        {#each statusList as item, index}
+            <StatusFilter text={item.text} {index} bind:status={statusList} />
         {/each}
     </div>
 </div>

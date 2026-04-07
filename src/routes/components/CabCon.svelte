@@ -54,10 +54,10 @@
     }
 
     .card-actions {
-        @apply mt-4;
+        @apply mt-4 gap-4;
 
         .btn {
-            @apply w-34 rounded-lg border-none bg-(--secondary) text-xl text-(--primary);
+            @apply w-31 rounded-lg border-none bg-(--secondary) text-base text-(--primary);
         }
     }
 </style>
