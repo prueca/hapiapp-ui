@@ -29,6 +29,6 @@
         @apply mt-2 text-base;
     }
     .ellipsis-btn {
-        @apply rounded-lg text-slate-400;
+        @apply rounded-lg border-0 bg-white/0 text-slate-400;
     }
 </style>

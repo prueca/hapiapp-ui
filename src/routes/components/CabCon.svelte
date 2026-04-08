@@ -42,7 +42,7 @@
     .code-container {
         @apply flex items-center gap-2;
         .code {
-            @apply text-2xl font-bold;
+            @apply text-2xl font-semibold;
         }
         .copy-btn {
             @apply text-(--accent);

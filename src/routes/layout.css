@@ -5,10 +5,16 @@
     themes: light --default;
 }
 
+@font-face {
+    font-family: 'Geist';
+    src: url('/fonts/Geist/Geist-VariableFont_wght.ttf') format('woff2');
+}
+
 /* variables */
 :root {
     --font-size: 16px;
     --font-color: #616161;
+    --font-family: 'Geist', sans-serif;
 
     --primary: #f1e5d1;
     --secondary: #c39898;
@@ -21,6 +27,7 @@ html,
 body {
     color: var(--font-color);
     font-size: var(--font-size);
+    font-family: var(--font-family);
     min-height: 100vh;
 }
 
