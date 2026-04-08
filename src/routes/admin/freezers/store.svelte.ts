@@ -1,3 +1,7 @@
+/**
+ * List Options
+ */
+
 let listOptionsFlag = $state(false)
 
 export const getListOptionsFlag = () => listOptionsFlag
@@ -42,3 +46,15 @@ export const statusOpts = $state([
 ])
 
 export const getStatusOpts = () => statusOpts
+
+/**
+ * Freezer Details
+ */
+
+let freezerDetailsFlag = $state(false)
+
+export const getFreezerDetailsFlag = () => freezerDetailsFlag
+
+export const toggleFreezerDetails = (flag: boolean) => {
+    freezerDetailsFlag = flag
+}

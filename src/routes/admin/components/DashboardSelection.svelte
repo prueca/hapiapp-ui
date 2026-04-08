@@ -3,7 +3,7 @@
     import DashboardOption from './DashboardOption.svelte'
 </script>
 
-<div class="dashboard-selection">
+<div>
     <div class="content-wrapper">
         <div class="section-title">Browse Dashboard</div>
         <div class="dashboard-grid">

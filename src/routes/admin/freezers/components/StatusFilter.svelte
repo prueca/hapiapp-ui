@@ -10,7 +10,7 @@
     }
 </script>
 
-<div class="status-filter">
+<div>
     <div class="label">
         <div>Filter by Status</div>
         <button class="select-all-btn btn btn-ghost" onclick={selectAll}> Select All </button>

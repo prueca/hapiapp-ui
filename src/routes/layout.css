@@ -46,7 +46,7 @@ input {
 }
 
 .content-wrapper {
-    @apply mx-auto max-w-[430px] p-4;
+    @apply mx-auto max-w-107.5 p-4;
 }
 .themed-btn {
     @apply rounded-lg border-none bg-(--primary) text-(--accent);

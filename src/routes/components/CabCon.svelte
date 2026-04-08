@@ -2,13 +2,13 @@
     import Icon from '@iconify/svelte'
 </script>
 
-<div class="cabcon">
+<div class="w-full">
     <div class="content-wrapper">
         <div class="card bg-base-100">
             <div class="card-body">
                 <h2 class="card-title">Lorem Store</h2>
-                <div class="code-container">
-                    <div class="code">CABCONJAN2020</div>
+                <div class="cabcon">
+                    <div class="cabcon-code">CABCONJAN2020</div>
                     <button class="copy-btn btn btn-circle btn-ghost btn-sm">
                         <Icon icon="si:copy-duotone" width="24" />
                     </button>
@@ -31,25 +31,19 @@
 <style lang="postcss">
     @reference 'tailwindcss';
 
-    .cabcon {
-        @apply w-full;
-    }
-
     .card {
         @apply w-full rounded-xl bg-(--primary) text-(--accent);
     }
 
-    .code-container {
+    .cabcon {
         @apply flex items-center gap-2;
-        .code {
+
+        .cabcon-code {
             @apply text-2xl font-semibold;
         }
-        .copy-btn {
-            @apply text-(--accent);
 
-            &:hover {
-                @apply bg-white/25;
-            }
+        .copy-btn {
+            @apply border-0 bg-white/0 text-(--accent);
         }
     }
 
